@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Baby Touch Lock</string>
+    <string name="tile_label">Baby Lock</string>
+    <string name="accessibility_service_label">Baby Touch Lock Dienst</string>
+    <string name="accessibility_service_description">Blockiert versehentliche Berührungen, Gesten, Statusleiste und Lautstärketasten beim Abspielen von Medien.</string>
+
+    <string name="main_title">Baby Touch Lock</string>
+    <string name="main_subtitle">Bildschirm- &amp; Tastensperre für Kinder</string>
+
+    <!-- Status Banner -->
+    <string name="status_active_title">Schutz Bereit</string>
+    <string name="status_active_desc">Der Barrierefreiheitsdienst ist aktiv.</string>
+    <string name="status_inactive_title">Aktivierung Erforderlich</string>
+    <string name="status_inactive_desc">Dienst aktivieren, um Touch &amp; Tasten zu blockieren.</string>
+    <string name="grant_permission">Dienst Aktivieren</string>
+    <string name="privacy_info_link">Datenschutz &amp; Barrierefreiheits-Hinweis</string>
+
+    <!-- Privacy & Accessibility Disclosure Dialog -->
+    <string name="disclosure_dialog_title">Barrierefreiheits-Hinweis</string>
+    <string name="disclosure_dialog_text">Baby Touch Lock nutzt die Android-Barrierefreiheits-API ausschließlich, um versehentliche Berührungen, Gesten und Tasten bei der Medienwiedergabe zu sperren.\n\n🔒 100% Lokal &amp; Privat: Keine Bildschirminhalte oder Daten werden erfasst, gespeichert oder übertragen.</string>
+    <string name="dialog_ok">Verstanden</string>
+    <string name="dialog_consent_agree">Akzeptieren &amp; Weiter</string>
+    <string name="dialog_consent_cancel">Abbrechen</string>
+
+    <!-- Section: Settings -->
+    <string name="section_settings_title">EINSTELLUNGEN</string>
+    <string name="volume_lock_switch_label">Lautstärketasten Sperren</string>
+    <string name="volume_lock_switch_desc">Verhindert Lautstärkeänderungen bei Sperre</string>
+    <string name="power_lock_switch_label">Display bei Power Wecken</string>
+    <string name="power_lock_switch_desc">Schaltet das Display bei Power-Druck sofort wieder ein</string>
+
+    <!-- Section: Quick Access -->
+    <string name="section_quick_access_title">SCHNELLZUGRIFF</string>
+    <string name="tile_item_title">Schnelleinstellungs-Kachel</string>
+    <string name="tile_item_desc">Verknüpfung zur Statusleiste hinzufügen</string>
+    <string name="btn_add_tile">Hinzufügen</string>
+    <string name="btn_tile_added">Hinzugefügt ✓</string>
+    <string name="tile_added_success">Kachel erfolgreich hinzugefügt!</string>
+    <string name="tile_already_present">Kachel ist bereits in den Schnelleinstellungen.</string>
+    <string name="manual_add_dialog_title">Manuelle Einrichtung</string>
+    <string name="manual_add_dialog_message">Kachel manuell hinzufügen:\n\n1. Zweimal von oben nach unten wischen (Schnelleinstellungen).\n2. Auf das Stift-Symbol (✏️) tippen.\n3. \"Baby Lock\" in die aktiven Kacheln ziehen.</string>
+
+    <!-- Section: Guide -->
+    <string name="section_guide_title">ANLEITUNG</string>
+    <string name="guide_activate_title">Sperre aktivieren</string>
+    <string name="guide_act_step1_title">1. Leiste Öffnen</string>
+    <string name="guide_act_step1_desc">Von oben nach unten wischen</string>
+    <string name="guide_act_step2_title">2. Baby Lock Tippen</string>
+    <string name="guide_act_step2_desc">Die Sperre wird sofort aktiviert</string>
+
+    <string name="guide_deactivate_title">Entsperren</string>
+    <string name="guide_deactivate_desc">Schloss-Symbol unten rechts antippen und nach oben schieben.</string>
+
+    <!-- Actions -->
+    <string name="btn_test_lock">Jetzt Sperren</string>
+    <string name="unlocked_toast">Bildschirm Entsperrt!</string>
+    <string name="accessibility_needed_toast">Bitte zuerst den Baby Touch Lock Dienst aktivieren.</string>
+
+    <!-- Switch States & Toast Formatting -->
+    <string name="state_on">EIN</string>
+    <string name="state_off">AUS</string>
+    <string name="setting_state_format">%1$s: %2$s</string>
+
+    <!-- Floating Lock & Slider Emojis / Symbols -->
+    <string name="lock_icon_locked">🔒</string>
+    <string name="lock_icon_unlocked">🔓</string>
+    <string name="slider_direction_indicator">▲\n▲</string>
+
+    <!-- WakeLock Tags -->
+    <string name="wake_lock_service_tag">BabyTouchLock:ServiceWakeScreen</string>
+    <string name="wake_lock_activity_tag">BabyTouchLock:ForceWakeScreen</string>
+</resources>

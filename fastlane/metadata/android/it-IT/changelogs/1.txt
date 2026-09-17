@@ -1,0 +1,8 @@
+﻿Prima versione:
+• Blocco completo di tocchi e gesture sullo schermo
+• Protezione dei tasti fisici del volume
+• Blocco tendina delle notifiche
+• Risveglio immediato dello schermo con tasto accensione
+• Tile nei Quick Settings per attivazione rapida
+• Slider di sblocco a prova di bambino
+• 100% offline e rispettoso della privacy

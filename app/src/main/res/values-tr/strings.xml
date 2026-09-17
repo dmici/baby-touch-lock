@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Baby Touch Lock</string>
+    <string name="tile_label">Baby Lock</string>
+    <string name="accessibility_service_label">Baby Touch Lock Hizmeti</string>
+    <string name="accessibility_service_description">Medya izlerken istenmeyen dokunmaları, hareketleri, bildirim panelini ve ses tuşlarını engeller.</string>
+
+    <string name="main_title">Baby Touch Lock</string>
+    <string name="main_subtitle">Çocuklar için ekran ve tuş kilidi</string>
+
+    <!-- Status Banner -->
+    <string name="status_active_title">Koruma Hazır</string>
+    <string name="status_active_desc">Erişilebilirlik hizmeti etkin ve çalışıyor.</string>
+    <string name="status_inactive_title">Etkinleştirme Gerekli</string>
+    <string name="status_inactive_desc">Dokunmaları ve tuşları engellemek için hizmeti açın.</string>
+    <string name="grant_permission">Hizmeti Aç</string>
+    <string name="privacy_info_link">Gizlilik Politikası ve Erişilebilirlik</string>
+
+    <!-- Privacy & Accessibility Disclosure Dialog -->
+    <string name="disclosure_dialog_title">Erişilebilirlik Bildirimi</string>
+    <string name="disclosure_dialog_text">Baby Touch Lock, yalnızca medya izleme sırasında istenmeyen dokunmaları, hareketleri ve fiziksel tuşları engellemek için Android Erişilebilirlik API\'sini kullanır.\n\n🔒 %100 Yerel ve Özel: Hiçbir ekran içeriği veya kişisel veri kaydedilmez veya iletilmez.</string>
+    <string name="dialog_ok">Anladım</string>
+    <string name="dialog_consent_agree">Kabul Et ve Devam Et</string>
+    <string name="dialog_consent_cancel">İptal</string>
+
+    <!-- Section: Settings -->
+    <string name="section_settings_title">AYARLAR</string>
+    <string name="volume_lock_switch_label">Ses Tuşlarını Kilitle</string>
+    <string name="volume_lock_switch_desc">Kilitliyken ses ayarlanmasını engeller</string>
+    <string name="power_lock_switch_label">Güç Tuşunda Ekranı Aç</string>
+    <string name="power_lock_switch_desc">Güç tuşuna basıldığında ekranı hemen geri açar</string>
+
+    <!-- Section: Quick Access -->
+    <string name="section_quick_access_title">HIZLI ERİŞİM</string>
+    <string name="tile_item_title">Hızlı Ayar Kutucuğu</string>
+    <string name="tile_item_desc">Bildirim paneline kısayol ekleyin</string>
+    <string name="btn_add_tile">Ekle</string>
+    <string name="btn_tile_added">Eklendi ✓</string>
+    <string name="tile_added_success">Hızlı ayar kutucuğu başarıyla eklendi!</string>
+    <string name="tile_already_present">Kısayol Hızlı Ayarlarınızda zaten mevcut.</string>
+    <string name="manual_add_dialog_title">Manuel Kurulum</string>
+    <string name="manual_add_dialog_message">Hızlı kutucuğu manuel eklemek için:\n\n1. Hızlı Ayarları açmak için ekranı yukarıdan iki kez kaydırın.\n2. Düzenle simgesine (✏️ kalem) dokunun.\n3. \"Baby Lock\" kutucuğunu aktif alana sürükleyin.</string>
+
+    <!-- Section: Guide -->
+    <string name="section_guide_title">REHBER</string>
+    <string name="guide_activate_title">Kilit nasıl açılır</string>
+    <string name="guide_act_step1_title">1. Paneli Açın</string>
+    <string name="guide_act_step1_desc">Ekranın üstünden aşağı kaydırın</string>
+    <string name="guide_act_step2_title">2. Baby Lock\'a Dokunun</string>
+    <string name="guide_act_step2_desc">Dokunma kilidi anında devreye girer</string>
+
+    <string name="guide_deactivate_title">Kilit nasıl kaldırılır</string>
+    <string name="guide_deactivate_desc">Sağ alttaki kilit simgesine dokunun ve yukarı kaydırın.</string>
+
+    <!-- Actions -->
+    <string name="btn_test_lock">Şimdi Kilitle</string>
+    <string name="unlocked_toast">Ekran Kilidi Açıldı!</string>
+    <string name="accessibility_needed_toast">Lütfen önce Baby Touch Lock hizmetini etkinleştirin.</string>
+
+    <!-- Switch States & Toast Formatting -->
+    <string name="state_on">AÇIK</string>
+    <string name="state_off">KAPALI</string>
+    <string name="setting_state_format">%1$s: %2$s</string>
+
+    <!-- Floating Lock & Slider Emojis / Symbols -->
+    <string name="lock_icon_locked">🔒</string>
+    <string name="lock_icon_unlocked">🔓</string>
+    <string name="slider_direction_indicator">▲\n▲</string>
+
+    <!-- WakeLock Tags -->
+    <string name="wake_lock_service_tag">BabyTouchLock:ServiceWakeScreen</string>
+    <string name="wake_lock_activity_tag">BabyTouchLock:ForceWakeScreen</string>
+</resources>

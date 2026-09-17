@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.babytouchlock.BabyTouchLockUnlockView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!-- Floating Lock Button (Tapping reveals the vertical slider) -->
+    <TextView
+        android:id="@+id/btn_floating_unlock"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|end"
+        android:background="@drawable/bg_floating_button"
+        android:gravity="center"
+        android:text="@string/lock_icon_locked"
+        android:textSize="26sp"
+        android:alpha="0.5"
+        android:visibility="visible" />
+
+    <!-- Vertical Unlock Slider Container (Initially hidden) -->
+    <FrameLayout
+        android:id="@+id/slider_container"
+        android:layout_width="60dp"
+        android:layout_height="260dp"
+        android:layout_gravity="bottom|end"
+        android:background="@drawable/bg_slider_track"
+        android:padding="4dp"
+        android:visibility="gone">
+
+        <!-- Unlock Target Icon (Top) -->
+        <TextView
+            android:id="@+id/slider_target_icon"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="top|center_horizontal"
+            android:gravity="center"
+            android:text="@string/lock_icon_unlocked"
+            android:textSize="24sp" />
+
+        <!-- Upward Swipe Indicator -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/slider_direction_indicator"
+            android:textColor="@color/slider_arrow_color"
+            android:textSize="12sp"
+            android:gravity="center" />
+
+        <!-- Draggable Slider Thumb -->
+        <TextView
+            android:id="@+id/slider_thumb"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/bg_slider_thumb"
+            android:gravity="center"
+            android:text="@string/lock_icon_locked"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+    </FrameLayout>
+
+</com.babytouchlock.BabyTouchLockUnlockView>
+

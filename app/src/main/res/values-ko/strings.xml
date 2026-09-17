@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Baby Touch Lock</string>
+    <string name="tile_label">Baby Lock</string>
+    <string name="accessibility_service_label">Baby Touch Lock 서비스</string>
+    <string name="accessibility_service_description">오작동 터치, 제스처, 알림창, 음량 버튼을 차단하여 미디어 재생을 보호합니다.</string>
+
+    <string name="main_title">Baby Touch Lock</string>
+    <string name="main_subtitle">아이들을 위한 화면 및 버튼 잠금</string>
+
+    <!-- Status Banner -->
+    <string name="status_active_title">보호 준비 완료</string>
+    <string name="status_active_desc">접근성 서비스가 활성화되어 실행 중입니다.</string>
+    <string name="status_inactive_title">활성화 필요</string>
+    <string name="status_inactive_desc">터치와 버튼을 차단하려면 접근성 서비스를 켜주세요.</string>
+    <string name="grant_permission">서비스 활성화</string>
+    <string name="privacy_info_link">개인정보 처리방침 및 접근성 안내</string>
+
+    <!-- Privacy & Accessibility Disclosure Dialog -->
+    <string name="disclosure_dialog_title">접근성 서비스 안내</string>
+    <string name="disclosure_dialog_text">Baby Touch Lock은 미디어 시청 중 의도치 않은 화면 터치, 제스처 및 물리 버튼을 차단하기 위한 목적으로만 Android 접근성 API를 사용합니다.\n\n🔒 100% 로컬 및 개인정보 보호: 화면 콘텐츠나 개인 데이터는 절대 수집, 저장 또는 전송되지 않습니다.</string>
+    <string name="dialog_ok">확인</string>
+    <string name="dialog_consent_agree">동의 및 계속</string>
+    <string name="dialog_consent_cancel">취소</string>
+
+    <!-- Section: Settings -->
+    <string name="section_settings_title">설정</string>
+    <string name="volume_lock_switch_label">볼륨 키 잠금</string>
+    <string name="volume_lock_switch_desc">잠금 상태에서 음량 조절 차단</string>
+    <string name="power_lock_switch_label">전원 시 화면 켜기</string>
+    <string name="power_lock_switch_desc">전원 버튼을 눌러도 즉시 화면을 다시 켭니다</string>
+
+    <!-- Section: Quick Access -->
+    <string name="section_quick_access_title">빠른 실행</string>
+    <string name="tile_item_title">빠른 설정 타일</string>
+    <string name="tile_item_desc">상단 알림창에 바로가기 추가</string>
+    <string name="btn_add_tile">추가</string>
+    <string name="btn_tile_added">추가됨 ✓</string>
+    <string name="tile_added_success">빠른 설정 타일이 추가되었습니다!</string>
+    <string name="tile_already_present">이미 빠른 설정에 추가되어 있습니다.</string>
+    <string name="manual_add_dialog_title">수동 추가 방법</string>
+    <string name="manual_add_dialog_message">타일을 직접 추가하는 방법:\n\n1. 화면 상단을 두 번 내려 빠른 설정을 엽니다.\n2. 편집 아이콘(✏️ 연필)을 누릅니다.\n3. \"Baby Lock\"을 활성 타일 영역으로 드래그합니다.</string>
+
+    <!-- Section: Guide -->
+    <string name="section_guide_title">가이드</string>
+    <string name="guide_activate_title">잠금 켜는 방법</string>
+    <string name="guide_act_step1_title">1. 빠른 설정 열기</string>
+    <string name="guide_act_step1_desc">화면 상단을 아래로 쓸어내리기</string>
+    <string name="guide_act_step2_title">2. Baby Lock 터치</string>
+    <string name="guide_act_step2_desc">즉시 화면 잠금이 활성화됩니다</string>
+
+    <string name="guide_deactivate_title">잠금 해제 방법</string>
+    <string name="guide_deactivate_desc">우측 하단 자물쇠 아이콘을 누르고 위로 슬라이드하세요.</string>
+
+    <!-- Actions -->
+    <string name="btn_test_lock">지금 잠금</string>
+    <string name="unlocked_toast">화면 잠금 해제됨!</string>
+    <string name="accessibility_needed_toast">먼저 Baby Touch Lock 접근성 서비스를 켜주세요.</string>
+
+    <!-- Switch States & Toast Formatting -->
+    <string name="state_on">켜짐</string>
+    <string name="state_off">꺼짐</string>
+    <string name="setting_state_format">%1$s: %2$s</string>
+
+    <!-- Floating Lock & Slider Emojis / Symbols -->
+    <string name="lock_icon_locked">🔒</string>
+    <string name="lock_icon_unlocked">🔓</string>
+    <string name="slider_direction_indicator">▲\n▲</string>
+
+    <!-- WakeLock Tags -->
+    <string name="wake_lock_service_tag">BabyTouchLock:ServiceWakeScreen</string>
+    <string name="wake_lock_activity_tag">BabyTouchLock:ForceWakeScreen</string>
+</resources>

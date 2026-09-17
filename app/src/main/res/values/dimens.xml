@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="floating_unlock_margin_x">16dp</dimen>
+    <dimen name="floating_unlock_margin_y">32dp</dimen>
+    <dimen name="slider_min_drag_distance">140dp</dimen>
+    <dimen name="touch_top_threshold">80dp</dimen>
+</resources>

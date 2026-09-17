@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Baby Touch Lock</string>
+    <string name="tile_label">Baby Lock</string>
+    <string name="accessibility_service_label">Baby Touch Lock サービス</string>
+    <string name="accessibility_service_description">誤タップ、ナビゲーション操作、通知バー、音量キーをブロックして動画再生を保護します。</string>
+
+    <string name="main_title">Baby Touch Lock</string>
+    <string name="main_subtitle">お子様向け 画面・ボタン誤操作防止</string>
+
+    <!-- Status Banner -->
+    <string name="status_active_title">保護機能 有効</string>
+    <string name="status_active_desc">ユーザー補助サービスは実行中です。</string>
+    <string name="status_inactive_title">設定が必要です</string>
+    <string name="status_inactive_desc">画面タップやボタンをブロックするためにサービスを有効化してください。</string>
+    <string name="grant_permission">サービスを有効化</string>
+    <string name="privacy_info_link">プライバシーポリシーとユーザー補助について</string>
+
+    <!-- Privacy & Accessibility Disclosure Dialog -->
+    <string name="disclosure_dialog_title">ユーザー補助サービスについて</string>
+    <string name="disclosure_dialog_text">Baby Touch Lockは、動画視聴中の誤タップ、ナビゲーション操作、物理ボタンを無効化する目的でのみAndroidのユーザー補助APIを使用します。\n\n🔒 100%ローカル＆プライベート: 画面内容や個人情報の収集・保存・送信は一切行いません。</string>
+    <string name="dialog_ok">了解</string>
+    <string name="dialog_consent_agree">同意して続行</string>
+    <string name="dialog_consent_cancel">キャンセル</string>
+
+    <!-- Section: Settings -->
+    <string name="section_settings_title">設定</string>
+    <string name="volume_lock_switch_label">音量キーをロック</string>
+    <string name="volume_lock_switch_desc">ロック中の音量変更を防止します</string>
+    <string name="power_lock_switch_label">電源キーで画面再点灯</string>
+    <string name="power_lock_switch_desc">電源ボタンが押されても即座に画面を点灯します</string>
+
+    <!-- Section: Quick Access -->
+    <string name="section_quick_access_title">クイックアクセス</string>
+    <string name="tile_item_title">クイック設定タイル</string>
+    <string name="tile_item_desc">通知バーにショートカットを追加</string>
+    <string name="btn_add_tile">追加</string>
+    <string name="btn_tile_added">追加済み ✓</string>
+    <string name="tile_added_success">クイック設定タイルを追加しました！</string>
+    <string name="tile_already_present">すでにクイック設定に追加されています。</string>
+    <string name="manual_add_dialog_title">手動での追加手順</string>
+    <string name="manual_add_dialog_message">手動でタイルを追加する方法:\n\n1. 画面上部から下へ2回スワイプしてクイック設定を開きます。\n2. 編集アイコン（✏️ 鉛筆）をタップします。\n3. 「Baby Lock」をアクティブなタイルにドラッグします。</string>
+
+    <!-- Section: Guide -->
+    <string name="section_guide_title">使い方ガイド</string>
+    <string name="guide_activate_title">ロックのかけ方</string>
+    <string name="guide_act_step1_title">1. 設定パネルを開く</string>
+    <string name="guide_act_step1_desc">画面上部から下へスワイプ</string>
+    <string name="guide_act_step2_title">2. Baby Lock をタップ</string>
+    <string name="guide_act_step2_desc">タッチブロックが即座に起動します</string>
+
+    <string name="guide_deactivate_title">ロックの解除方法</string>
+    <string name="guide_deactivate_desc">右下の鍵アイコンをタップし、上方向へスライドします。</string>
+
+    <!-- Actions -->
+    <string name="btn_test_lock">今すぐロック</string>
+    <string name="unlocked_toast">画面ロックを解除しました！</string>
+    <string name="accessibility_needed_toast">最初にBaby Touch Lockのユーザー補助を有効にしてください。</string>
+
+    <!-- Switch States & Toast Formatting -->
+    <string name="state_on">オン</string>
+    <string name="state_off">オフ</string>
+    <string name="setting_state_format">%1$s: %2$s</string>
+
+    <!-- Floating Lock & Slider Emojis / Symbols -->
+    <string name="lock_icon_locked">🔒</string>
+    <string name="lock_icon_unlocked">🔓</string>
+    <string name="slider_direction_indicator">▲\n▲</string>
+
+    <!-- WakeLock Tags -->
+    <string name="wake_lock_service_tag">BabyTouchLock:ServiceWakeScreen</string>
+    <string name="wake_lock_activity_tag">BabyTouchLock:ForceWakeScreen</string>
+</resources>

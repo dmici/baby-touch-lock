@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Baby Touch Lock</string>
+    <string name="tile_label">Baby Lock</string>
+    <string name="accessibility_service_label">Baby Touch Lock 无障碍服务</string>
+    <string name="accessibility_service_description">阻止误触、手势导航、通知栏下拉及音量按键，保护媒体播放。</string>
+
+    <string name="main_title">Baby Touch Lock</string>
+    <string name="main_subtitle">儿童防误触屏幕与按键锁</string>
+
+    <!-- Status Banner -->
+    <string name="status_active_title">防护已就绪</string>
+    <string name="status_active_desc">无障碍服务已启用并正常运行。</string>
+    <string name="status_inactive_title">需要启用服务</string>
+    <string name="status_inactive_desc">启用无障碍服务以拦截触控与物理按键。</string>
+    <string name="grant_permission">启用服务</string>
+    <string name="privacy_info_link">隐私政策与无障碍说明</string>
+
+    <!-- Privacy & Accessibility Disclosure Dialog -->
+    <string name="disclosure_dialog_title">无障碍服务声明</string>
+    <string name="disclosure_dialog_text">Baby Touch Lock 仅使用 Android 无障碍服务 API 来防止观看媒体时的屏幕误触、手势和按键操作。\n\n🔒 100% 本地与隐私安全：绝不读取、存储或通过网络传输任何屏幕内容与个人数据。</string>
+    <string name="dialog_ok">知道了</string>
+    <string name="dialog_consent_agree">同意并继续</string>
+    <string name="dialog_consent_cancel">取消</string>
+
+    <!-- Section: Settings -->
+    <string name="section_settings_title">设置</string>
+    <string name="volume_lock_switch_label">锁定音量按键</string>
+    <string name="volume_lock_switch_desc">锁定状态下禁止调节音量</string>
+    <string name="power_lock_switch_label">电源键即时亮屏</string>
+    <string name="power_lock_switch_desc">按下电源键时立即自动重新点亮屏幕</string>
+
+    <!-- Section: Quick Access -->
+    <string name="section_quick_access_title">快捷方式</string>
+    <string name="tile_item_title">快捷设置磁贴</string>
+    <string name="tile_item_desc">将快捷开关添加到顶部通知栏</string>
+    <string name="btn_add_tile">添加</string>
+    <string name="btn_tile_added">已添加 ✓</string>
+    <string name="tile_added_success">快捷设置磁贴已成功添加！</string>
+    <string name="tile_already_present">快捷开关已存在于快捷设置中。</string>
+    <string name="manual_add_dialog_title">手动添加磁贴</string>
+    <string name="manual_add_dialog_message">手动添加快捷磁贴步骤：\n\n1. 从屏幕顶部向下滑动两次打开快捷设置。\n2. 点击编辑图标（✏️ 铅笔）。\n3. 将“Baby Lock”拖动到激活的磁贴中。</string>
+
+    <!-- Section: Guide -->
+    <string name="section_guide_title">使用指南</string>
+    <string name="guide_activate_title">如何开启锁定</string>
+    <string name="guide_act_step1_title">1. 打开快捷设置</string>
+    <string name="guide_act_step1_desc">从屏幕顶部向下滑动</string>
+    <string name="guide_act_step2_title">2. 点击 Baby Lock</string>
+    <string name="guide_act_step2_desc">触控锁将立即开启</string>
+
+    <string name="guide_deactivate_title">如何解除锁定</string>
+    <string name="guide_deactivate_desc">点击右下角锁图标并向上滑动即可解锁。</string>
+
+    <!-- Actions -->
+    <string name="btn_test_lock">立即锁定</string>
+    <string name="unlocked_toast">屏幕已解锁！</string>
+    <string name="accessibility_needed_toast">请先启用 Baby Touch Lock 无障碍服务。</string>
+
+    <!-- Switch States & Toast Formatting -->
+    <string name="state_on">开启</string>
+    <string name="state_off">关闭</string>
+    <string name="setting_state_format">%1$s: %2$s</string>
+
+    <!-- Floating Lock & Slider Emojis / Symbols -->
+    <string name="lock_icon_locked">🔒</string>
+    <string name="lock_icon_unlocked">🔓</string>
+    <string name="slider_direction_indicator">▲\n▲</string>
+
+    <!-- WakeLock Tags -->
+    <string name="wake_lock_service_tag">BabyTouchLock:ServiceWakeScreen</string>
+    <string name="wake_lock_activity_tag">BabyTouchLock:ForceWakeScreen</string>
+</resources>

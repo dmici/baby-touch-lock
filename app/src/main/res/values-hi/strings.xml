@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Baby Touch Lock</string>
+    <string name="tile_label">Baby Lock</string>
+    <string name="accessibility_service_label">Baby Touch Lock सेवा</string>
+    <string name="accessibility_service_description">वीडियो देखते समय अनचाहे टच, जेस्चर, नोटिफिकेशन पैनल और वॉल्यूम बटन को ब्लॉक करता है।</string>
+
+    <string name="main_title">Baby Touch Lock</string>
+    <string name="main_subtitle">बच्चों के लिए स्क्रीन और बटन लॉक</string>
+
+    <!-- Status Banner -->
+    <string name="status_active_title">सुरक्षा तैयार है</string>
+    <string name="status_active_desc">एक्सेसिबिलिटी सेवा सक्रिय और चालू है।</string>
+    <string name="status_inactive_title">सक्रियण आवश्यक</string>
+    <string name="status_inactive_desc">टच और बटन रोकने के लिए एक्सेसिबिलिटी सेवा चालू करें।</string>
+    <string name="grant_permission">सेवा चालू करें</string>
+    <string name="privacy_info_link">गोपनीयता नीति और एक्सेसिबिलिटी विवरण</string>
+
+    <!-- Privacy & Accessibility Disclosure Dialog -->
+    <string name="disclosure_dialog_title">एक्सेसिबिलिटी सेवा विवरण</string>
+    <string name="disclosure_dialog_text">Baby Touch Lock केवल वीडियो देखते समय अनचाहे टच, जेस्चर और बटन को ब्लॉक करने के लिए Android एक्सेसिबिलिटी API का उपयोग करता है।\n\n🔒 100% स्थानीय और निजी: कोई भी स्क्रीन सामग्री या व्यक्तिगत डेटा कभी एकत्र या साझा नहीं किया जाता है।</string>
+    <string name="dialog_ok">समझ गया</string>
+    <string name="dialog_consent_agree">स्वीकार करें और आगे बढ़ें</string>
+    <string name="dialog_consent_cancel">रद्द करें</string>
+
+    <!-- Section: Settings -->
+    <string name="section_settings_title">सेटिंग्स</string>
+    <string name="volume_lock_switch_label">वॉल्यूम बटन लॉक करें</string>
+    <string name="volume_lock_switch_desc">लॉक होने पर वॉल्यूम बदलने से रोकता है</string>
+    <string name="power_lock_switch_label">पावर दबाने पर स्क्रीन ऑन</string>
+    <string name="power_lock_switch_desc">पावर बटन दबाने पर तुरंत स्क्रीन दोबारा चालू करता है</string>
+
+    <!-- Section: Quick Access -->
+    <string name="section_quick_access_title">त्वरित पहुंच</string>
+    <string name="tile_item_title">क्विक सेटिंग्स टाइल</string>
+    <string name="tile_item_desc">नोटिफिकेशन पैनल में शॉर्टकट जोड़ें</string>
+    <string name="btn_add_tile">जोड़ें</string>
+    <string name="btn_tile_added">जोड़ा गया ✓</string>
+    <string name="tile_added_success">क्विक सेटिंग्स टाइल सफलतापूर्वक जोड़ी गई!</string>
+    <string name="tile_already_present">शॉर्टकट आपकी क्विक सेटिंग्स में पहले से मौजूद है।</string>
+    <string name="manual_add_dialog_title">मैन्युअल सेटअप</string>
+    <string name="manual_add_dialog_message">क्विक टाइल मैन्युअल जोड़ने के लिए:\n\n1. क्विक सेटिंग्स खोलने के लिए स्क्रीन ऊपर से दो बार नीचे खींचें।\n2. एडिट आइकन (✏️ पेंसिल) पर टैप करें।\n3. \"Baby Lock\" को अपनी सक्रिय टाइल्स में खींचें।</string>
+
+    <!-- Section: Guide -->
+    <string name="section_guide_title">मार्गदर्शिका</string>
+    <string name="guide_activate_title">लॉक कैसे लगाएं</string>
+    <string name="guide_act_step1_title">1. क्विक पैनल खोलें</string>
+    <string name="guide_act_step1_desc">स्क्रीन के ऊपर से नीचे स्वाइप करें</string>
+    <string name="guide_act_step2_title">2. Baby Lock दबाएं</string>
+    <string name="guide_act_step2_desc">टच लॉक तुरंत सक्रिय हो जाता है</string>
+
+    <string name="guide_deactivate_title">लॉक कैसे हटाएं</string>
+    <string name="guide_deactivate_desc">नीचे दाईं ओर ताला आइकन पर टैप करें और ऊपर की ओर स्लाइड करें।</string>
+
+    <!-- Actions -->
+    <string name="btn_test_lock">अभी लॉक करें</string>
+    <string name="unlocked_toast">स्क्रीन अनलॉक हो गई!</string>
+    <string name="accessibility_needed_toast">कृपया पहले Baby Touch Lock एक्सेसिबिलिटी सेवा चालू करें।</string>
+
+    <!-- Switch States & Toast Formatting -->
+    <string name="state_on">चालू</string>
+    <string name="state_off">बंद</string>
+    <string name="setting_state_format">%1$s: %2$s</string>
+
+    <!-- Floating Lock & Slider Emojis / Symbols -->
+    <string name="lock_icon_locked">🔒</string>
+    <string name="lock_icon_unlocked">🔓</string>
+    <string name="slider_direction_indicator">▲\n▲</string>
+
+    <!-- WakeLock Tags -->
+    <string name="wake_lock_service_tag">BabyTouchLock:ServiceWakeScreen</string>
+    <string name="wake_lock_activity_tag">BabyTouchLock:ForceWakeScreen</string>
+</resources>

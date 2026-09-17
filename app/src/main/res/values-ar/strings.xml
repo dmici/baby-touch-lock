@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Baby Touch Lock</string>
+    <string name="tile_label">Baby Lock</string>
+    <string name="accessibility_service_label">خدمة Baby Touch Lock</string>
+    <string name="accessibility_service_description">يمنع اللمسات غير المقصودة وإيماءات التنقل وشريط الإشعارات ومفاتيح الصوت أثناء مشاهدة الفيديو.</string>
+
+    <string name="main_title">Baby Touch Lock</string>
+    <string name="main_subtitle">قفل الشاشة والأزرار للأطفال</string>
+
+    <!-- Status Banner -->
+    <string name="status_active_title">الحماية جاهزة</string>
+    <string name="status_active_desc">خدمة إمكانية الوصول نشطة وتعمل.</string>
+    <string name="status_inactive_title">التفعيل مطلوب</string>
+    <string name="status_inactive_desc">مكن خدمة إمكانية الوصول لحظر اللمسات والأزرار.</string>
+    <string name="grant_permission">تفعيل الخدمة</string>
+    <string name="privacy_info_link">سياسة الخصوصية وإمكانية الوصول</string>
+
+    <!-- Privacy & Accessibility Disclosure Dialog -->
+    <string name="disclosure_dialog_title">إفصاح خدمة إمكانية الوصول</string>
+    <string name="disclosure_dialog_text">يستخدم Baby Touch Lock واجهة إمكانية الوصول في Android فقط لمنع اللمسات العرضية والإيماءات والأزرار أثناء تشغيل الوسائط.\n\n🔒 محلي وخاص 100%: لا يتم الوصول لأي بيانات أو محتوى شاشة أو حفظه أو إرساله عبر الإنترنت.</string>
+    <string name="dialog_ok">فهمت</string>
+    <string name="dialog_consent_agree">قبول ومتابعة</string>
+    <string name="dialog_consent_cancel">إلغاء</string>
+
+    <!-- Section: Settings -->
+    <string name="section_settings_title">الإعدادات</string>
+    <string name="volume_lock_switch_label">قفل مفاتيح الصوت</string>
+    <string name="volume_lock_switch_desc">يمنع تغيير مستوى الصوت أثناء القفل</string>
+    <string name="power_lock_switch_label">إضاءة الشاشة مع التشغيل</string>
+    <string name="power_lock_switch_desc">يعيد تشغيل الشاشة فوراً عند الضغط على زر التشغيل</string>
+
+    <!-- Section: Quick Access -->
+    <string name="section_quick_access_title">وصول سريع</string>
+    <string name="tile_item_title">زر الإعدادات السريعة</string>
+    <string name="tile_item_desc">إضافة اختصار إلى لوحة الإشعارات</string>
+    <string name="btn_add_tile">إضافة</string>
+    <string name="btn_tile_added">تمت الإضافة ✓</string>
+    <string name="tile_added_success">تمت إضافة الزر السريع بنجاح!</string>
+    <string name="tile_already_present">الاختصار موجود بالفعل في الإعدادات السريعة.</string>
+    <string name="manual_add_dialog_title">الإعداد اليدوي</string>
+    <string name="manual_add_dialog_message">لإضافة الزر السريع يدوياً:\n\n1. اسحب لأسفل مرتين لفتح الإعدادات السريعة.\n2. اضغط على أيقونة التعديل (✏️ قلم).\n3. اسحب \"Baby Lock\" إلى اللوحات النشطة.</string>
+
+    <!-- Section: Guide -->
+    <string name="section_guide_title">الدليل</string>
+    <string name="guide_activate_title">كيفية تفعيل القفل</string>
+    <string name="guide_act_step1_title">1. افتح الإعدادات</string>
+    <string name="guide_act_step1_desc">اسحب لأسفل من أعلى الشاشة</string>
+    <string name="guide_act_step2_title">2. اضغط Baby Lock</string>
+    <string name="guide_act_step2_desc">يتم تفعيل القفل على الفور</string>
+
+    <string name="guide_deactivate_title">كيفية إلغاء القفل</string>
+    <string name="guide_deactivate_desc">اضغط على أيقونة القفل في الزاوية واسحبها لأعلى.</string>
+
+    <!-- Actions -->
+    <string name="btn_test_lock">قفل الآن</string>
+    <string name="unlocked_toast">تم إلغاء قفل الشاشة!</string>
+    <string name="accessibility_needed_toast">يرجى تفعيل خدمة Baby Touch Lock أولاً.</string>
+
+    <!-- Switch States & Toast Formatting -->
+    <string name="state_on">تشغيل</string>
+    <string name="state_off">إيقاف</string>
+    <string name="setting_state_format">%1$s: %2$s</string>
+
+    <!-- Floating Lock & Slider Emojis / Symbols -->
+    <string name="lock_icon_locked">🔒</string>
+    <string name="lock_icon_unlocked">🔓</string>
+    <string name="slider_direction_indicator">▲\n▲</string>
+
+    <!-- WakeLock Tags -->
+    <string name="wake_lock_service_tag">BabyTouchLock:ServiceWakeScreen</string>
+    <string name="wake_lock_activity_tag">BabyTouchLock:ForceWakeScreen</string>
+</resources>

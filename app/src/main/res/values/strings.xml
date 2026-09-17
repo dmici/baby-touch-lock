@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Baby Touch Lock</string>
+    <string name="tile_label">Baby Lock</string>
+    <string name="accessibility_service_label">Baby Touch Lock Service</string>
+    <string name="accessibility_service_description">Prevents accidental touches, navigation gestures, notification shade expansion, and volume key presses to protect media playback.</string>
+
+    <string name="main_title">Baby Touch Lock</string>
+    <string name="main_subtitle">Screen and buttons lock for kids</string>
+
+    <!-- Status Banner -->
+    <string name="status_active_title">Protection Ready</string>
+    <string name="status_active_desc">Accessibility service is active and running.</string>
+    <string name="status_inactive_title">Activation Required</string>
+    <string name="status_inactive_desc">Enable the Accessibility Service to intercept touches and buttons.</string>
+    <string name="grant_permission">Enable Service</string>
+    <string name="privacy_info_link">Privacy Policy and Accessibility Disclosure</string>
+
+    <!-- Privacy & Accessibility Disclosure Dialog -->
+    <string name="disclosure_dialog_title">Accessibility Service Disclosure</string>
+    <string name="disclosure_dialog_text">Baby Touch Lock uses Android\'s AccessibilityService API solely to block accidental screen taps, navigation gestures, and hardware buttons during media viewing.\n\n🔒 100% Local &amp; Private: No screen content, keystrokes, or personal data is ever accessed, stored, or transmitted over the internet.</string>
+    <string name="dialog_ok">Understood</string>
+    <string name="dialog_consent_agree">Accept &amp; Continue</string>
+    <string name="dialog_consent_cancel">Cancel</string>
+
+    <!-- Section: Settings -->
+    <string name="section_settings_title">SETTINGS</string>
+    <string name="volume_lock_switch_label">Lock Volume Keys</string>
+    <string name="volume_lock_switch_desc">Prevents adjusting the volume while locked</string>
+    <string name="power_lock_switch_label">Wake Screen on Power</string>
+    <string name="power_lock_switch_desc">Instantly turns the screen back on if the Power button is pressed</string>
+
+    <!-- Section: Quick Access -->
+    <string name="section_quick_access_title">QUICK ACCESS</string>
+    <string name="tile_item_title">Quick Settings Tile</string>
+    <string name="tile_item_desc">Add shortcut to your notification drawer</string>
+    <string name="btn_add_tile">Add</string>
+    <string name="btn_tile_added">Added ✓</string>
+    <string name="tile_added_success">Quick Settings tile added successfully!</string>
+    <string name="tile_already_present">The shortcut is already in your Quick Settings.</string>
+    <string name="manual_add_dialog_title">Manual Shortcut Setup</string>
+    <string name="manual_add_dialog_message">To add the quick tile manually:\n\n1. Swipe down twice from the top of the screen to open Quick Settings.\n2. Tap the Edit icon (✏️ pencil).\n3. Drag \"Baby Lock\" into your active tiles.</string>
+
+    <!-- Section: Guide -->
+    <string name="section_guide_title">GUIDE</string>
+    <string name="guide_activate_title">How to activate the lock</string>
+    <string name="guide_act_step1_title">1. Open Quick Settings</string>
+    <string name="guide_act_step1_desc">Swipe down from the top of the screen</string>
+    <string name="guide_act_step2_title">2. Tap Baby Lock</string>
+    <string name="guide_act_step2_desc">The touch blocker is immediately activated</string>
+
+    <string name="guide_deactivate_title">How to unlock</string>
+    <string name="guide_deactivate_desc">Tap the lock icon in the bottom right corner and slide it upwards.</string>
+
+    <!-- Actions -->
+    <string name="btn_test_lock">Lock Now</string>
+    <string name="unlocked_toast">Screen Unlocked!</string>
+    <string name="accessibility_needed_toast">Please enable the Baby Touch Lock Accessibility Service first.</string>
+
+    <!-- Switch States & Toast Formatting -->
+    <string name="state_on">ON</string>
+    <string name="state_off">OFF</string>
+    <string name="setting_state_format">%1$s: %2$s</string>
+
+    <!-- Floating Lock & Slider Emojis / Symbols -->
+    <string name="lock_icon_locked">🔒</string>
+    <string name="lock_icon_unlocked">🔓</string>
+    <string name="slider_direction_indicator">▲\n▲</string>
+
+    <!-- WakeLock Tags -->
+    <string name="wake_lock_service_tag">BabyTouchLock:ServiceWakeScreen</string>
+    <string name="wake_lock_activity_tag">BabyTouchLock:ForceWakeScreen</string>
+</resources>

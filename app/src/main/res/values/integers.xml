@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="screen_wake_lock_timeout_ms">1500</integer>
+    <integer name="vibration_feedback_duration_ms">300</integer>
+    <integer name="slider_reset_anim_duration_ms">200</integer>
+    <integer name="collapse_delay_short_ms">100</integer>
+    <integer name="collapse_delay_long_ms">300</integer>
+</resources>

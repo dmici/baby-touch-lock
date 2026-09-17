@@ -1,0 +1,8 @@
+﻿Initial release:
+• Full screen touch & gesture lock
+• Hardware volume button protection
+• Notification shade pull-down prevention
+• Instant screen wake on power button
+• Quick Settings tile for 1-tap lock
+• Child-proof slide unlock
+• 100% offline and privacy-friendly

@@ -1,0 +1,13 @@
+Baby Touch Lock è un\'utilità semplice e sicura per genitori, creata per evitare che i bambini interrompano la visione di video o cartoni toccando inavvertitamente lo schermo o i tasti di navigazione.
+
+Caratteristiche principali:
+- Blocco totale dei tocchi a schermo e del multi-touch.
+- Blocco delle gesture di bordo (Indietro, Home, App Recenti).
+- Impedisce l\'apertura della tendina delle notifiche e dei Quick Settings.
+- Blocco opzionale dei tasti fisici del volume per evitare sbalzi audio.
+- Comodo pulsante Quick Settings nella tendina per attivazione con 1 tocco.
+- Meccanismo di sblocco a scorrimento verticale studiato per evitare sblocchi casuali da parte dei più piccoli.
+- 100% Locale e Privato: Nessun permesso Internet, nessuna pubblicità, zero tracciamento.
+
+Uso del Servizio di Accessibilità:
+Baby Touch Lock utilizza l\'API di Accessibilità Android unicamente per intercettare e bloccare i tocchi accidentali a schermo e i tasti fisici quando il blocco è attivo. Il servizio non legge né analizza alcun dato privato o testo presente sullo schermo.

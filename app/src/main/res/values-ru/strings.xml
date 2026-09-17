@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Baby Touch Lock</string>
+    <string name="tile_label">Baby Lock</string>
+    <string name="accessibility_service_label">Служба Baby Touch Lock</string>
+    <string name="accessibility_service_description">Блокирует случайные нажатия, жесты, шторку уведомлений и громкость при просмотре видео.</string>
+
+    <string name="main_title">Baby Touch Lock</string>
+    <string name="main_subtitle">Блокировка экрана и кнопок для детей</string>
+
+    <!-- Status Banner -->
+    <string name="status_active_title">Защита Готова</string>
+    <string name="status_active_desc">Служба спец. возможностей активна.</string>
+    <string name="status_inactive_title">Требуется Включение</string>
+    <string name="status_inactive_desc">Включите службу для блокировки касаний и кнопок.</string>
+    <string name="grant_permission">Включить Службу</string>
+    <string name="privacy_info_link">Политика конфиденциальности и доступ</string>
+
+    <!-- Privacy & Accessibility Disclosure Dialog -->
+    <string name="disclosure_dialog_title">Использование спец. возможностей</string>
+    <string name="disclosure_dialog_text">Baby Touch Lock использует API спец. возможностей Android только для блокировки случайных касаний, жестов и кнопок при просмотре видео.\n\n🔒 100% Локально: Данные экрана и личные данные никогда не считываются, не сохраняются и не передаются в сеть.</string>
+    <string name="dialog_ok">Понятно</string>
+    <string name="dialog_consent_agree">Принять и продолжить</string>
+    <string name="dialog_consent_cancel">Отмена</string>
+
+    <!-- Section: Settings -->
+    <string name="section_settings_title">НАСТРОЙКИ</string>
+    <string name="volume_lock_switch_label">Блок Кнопок Громкости</string>
+    <string name="volume_lock_switch_desc">Запрещает менять громкость при блокировке</string>
+    <string name="power_lock_switch_label">Включать Экран (Power)</string>
+    <string name="power_lock_switch_desc">Сразу включает экран при нажатии кнопки питания</string>
+
+    <!-- Section: Quick Access -->
+    <string name="section_quick_access_title">БЫСТРЫЙ ДОСТУП</string>
+    <string name="tile_item_title">Плитка Быстрых Настроек</string>
+    <string name="tile_item_desc">Добавить кнопку в панель уведомлений</string>
+    <string name="btn_add_tile">Добавить</string>
+    <string name="btn_tile_added">Добавлено ✓</string>
+    <string name="tile_added_success">Плитка успешно добавлена!</string>
+    <string name="tile_already_present">Кнопка уже есть в быстрых настройках.</string>
+    <string name="manual_add_dialog_title">Ручная Настройка</string>
+    <string name="manual_add_dialog_message">Чтобы добавить плитку вручную:\n\n1. Проведите дважды вниз от верха экрана.\n2. Нажмите значок «Изменить» (✏️ карандаш).\n3. Перетащите «Baby Lock» в активные плитки.</string>
+
+    <!-- Section: Guide -->
+    <string name="section_guide_title">ИНСТРУКЦИЯ</string>
+    <string name="guide_activate_title">Как включить блокировку</string>
+    <string name="guide_act_step1_title">1. Откройте шторку</string>
+    <string name="guide_act_step1_desc">Проведите сверху вниз</string>
+    <string name="guide_act_step2_title">2. Нажмите Baby Lock</string>
+    <string name="guide_act_step2_desc">Блокировка включится мгновенно</string>
+
+    <string name="guide_deactivate_title">Как снять блокировку</string>
+    <string name="guide_deactivate_desc">Нажмите на замок в правом нижнем углу и проведите вверх.</string>
+
+    <!-- Actions -->
+    <string name="btn_test_lock">Заблокировать Сейчас</string>
+    <string name="unlocked_toast">Экран Разблокирован!</string>
+    <string name="accessibility_needed_toast">Сначала включите службу Baby Touch Lock.</string>
+
+    <!-- Switch States & Toast Formatting -->
+    <string name="state_on">ВКЛ</string>
+    <string name="state_off">ВЫКЛ</string>
+    <string name="setting_state_format">%1$s: %2$s</string>
+
+    <!-- Floating Lock & Slider Emojis / Symbols -->
+    <string name="lock_icon_locked">🔒</string>
+    <string name="lock_icon_unlocked">🔓</string>
+    <string name="slider_direction_indicator">▲\n▲</string>
+
+    <!-- WakeLock Tags -->
+    <string name="wake_lock_service_tag">BabyTouchLock:ServiceWakeScreen</string>
+    <string name="wake_lock_activity_tag">BabyTouchLock:ForceWakeScreen</string>
+</resources>

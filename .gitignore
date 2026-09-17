@@ -1,0 +1,19 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+*/build
+*.hprof
+.cxx
+Captures
+
+# Keystore and signing credentials
+*.jks
+*.keystore
+keystore.properties
+
+# Build artifacts & packages
+*.apk
+*.aab

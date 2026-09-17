@@ -1,0 +1,13 @@
+Baby Touch Lock is a simple, lightweight parental tool designed to keep videos and apps playing uninterrupted by blocking accidental screen touches and navigation gestures.
+
+Key Features:
+- Blocks screen touches and multi-touch interactions.
+- Prevents navigation bar gestures (Back, Home, App Switch).
+- Keeps the notification drawer and Quick Settings closed.
+- Optional lock for physical volume keys.
+- Quick Settings tile for convenient 1-tap activation.
+- Disengages with an intuitive, child-resistant slide-to-unlock widget.
+- 100% offline: No internet permission, no advertisements, and zero tracking.
+
+Accessibility Service Usage:
+Baby Touch Lock uses Android's AccessibilityService API exclusively to detect and block touch inputs and physical button presses when the lock overlay is active. The service does not inspect or read any on-screen text or private data.
