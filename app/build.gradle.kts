@@ -55,6 +55,9 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            vcsInfo {
+                include = false
+            }
             signingConfigs.findByName("release")?.let { releaseSigning ->
                 if (releaseSigning.storeFile != null) {
                     signingConfig = releaseSigning
