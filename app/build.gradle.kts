@@ -48,7 +48,12 @@ android {
         }
     }
 
-    buildTypes {
+        dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
+    }
+
+buildTypes {
         release {
             isMinifyEnabled = false
             proguardFiles(
