@@ -50,16 +50,23 @@ class BabyTouchLockTileService : TileService() {
             return
         }
 
-        if (BabyTouchLockAccessibilityService.isLocked) {
-            // Unlock and remove lock overlays
+        if (BabyTouchLockAccessibilityService.isLocked || service.isPendingLockActive) {
+            // Unlock and remove lock overlays (or cancel pending lock)
             service.unlock()
             updateTileState(false)
         } else {
-            // 1. Collapse Quick Settings drawer via AccessibilityService
+            // 1. Collapse Quick Settings drawer across all Android versions
             service.collapseSystemUI()
+            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S) {
+                try {
+                    @Suppress("DEPRECATION")
+                    sendBroadcast(Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS))
+                } catch (_: Exception) {}
+            }
 
-            // 2. Engage screen lock
-            service.lock()
+            // 2. Engage screen lock after delay allowing system shade to finish collapsing
+            val delay = resources.getInteger(R.integer.collapse_delay_long_ms).toLong()
+            service.lock(delayMs = delay)
             updateTileState(true)
         }
     }

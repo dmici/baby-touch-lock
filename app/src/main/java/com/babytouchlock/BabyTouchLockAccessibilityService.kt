@@ -64,6 +64,11 @@ class BabyTouchLockAccessibilityService : AccessibilityService() {
 
     private val handler = Handler(Looper.getMainLooper())
 
+    private var pendingLockRunnable: Runnable? = null
+
+    val isPendingLockActive: Boolean
+        get() = pendingLockRunnable != null
+
     /**
      * BroadcastReceiver listening for screen-off events to immediately wake the display if enabled.
      */
@@ -90,6 +95,8 @@ class BabyTouchLockAccessibilityService : AccessibilityService() {
     }
 
     override fun onUnbind(intent: Intent?): Boolean {
+        pendingLockRunnable?.let { handler.removeCallbacks(it) }
+        pendingLockRunnable = null
         if (isLocked) {
             unlock()
         }
@@ -107,6 +114,8 @@ class BabyTouchLockAccessibilityService : AccessibilityService() {
     }
 
     override fun onDestroy() {
+        pendingLockRunnable?.let { handler.removeCallbacks(it) }
+        pendingLockRunnable = null
         if (isLocked) {
             unlock()
         }
@@ -119,13 +128,29 @@ class BabyTouchLockAccessibilityService : AccessibilityService() {
     }
 
     /**
-     * Activates the touch lock overlay windows.
+     * Activates the touch lock overlay windows, optionally after a specified delay.
+     *
+     * @param delayMs Delay in milliseconds before showing the lock windows.
+     *                Useful when triggered from Quick Settings to allow the notification shade
+     *                to finish its collapse animation smoothly.
      */
-    fun lock() {
-        if (Looper.myLooper() == Looper.getMainLooper()) {
-            showLockWindows()
+    fun lock(delayMs: Long = 0L) {
+        pendingLockRunnable?.let { handler.removeCallbacks(it) }
+        pendingLockRunnable = null
+
+        if (delayMs <= 0L) {
+            if (Looper.myLooper() == Looper.getMainLooper()) {
+                showLockWindows()
+            } else {
+                handler.post { showLockWindows() }
+            }
         } else {
-            handler.post { showLockWindows() }
+            val runnable = Runnable {
+                pendingLockRunnable = null
+                showLockWindows()
+            }
+            pendingLockRunnable = runnable
+            handler.postDelayed(runnable, delayMs)
         }
     }
 
@@ -133,6 +158,9 @@ class BabyTouchLockAccessibilityService : AccessibilityService() {
      * Deactivates the touch lock overlay windows and provides haptic feedback.
      */
     fun unlock() {
+        pendingLockRunnable?.let { handler.removeCallbacks(it) }
+        pendingLockRunnable = null
+
         if (Looper.myLooper() == Looper.getMainLooper()) {
             hideLockWindows()
         } else {
@@ -141,13 +169,17 @@ class BabyTouchLockAccessibilityService : AccessibilityService() {
     }
 
     /**
-     * Closes the notification shade / Quick Settings drawer.
-     * Uses Android 12+ (API 31+) Global Action.
+     * Closes the notification shade / Quick Settings drawer across all Android versions.
+     * Uses Android 12+ (API 31+) Global Action, or ACTION_CLOSE_SYSTEM_DIALOGS broadcast on Android 11 and below.
      */
     fun collapseSystemUI() {
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                 performGlobalAction(GLOBAL_ACTION_DISMISS_NOTIFICATION_SHADE)
+            } else {
+                @Suppress("DEPRECATION")
+                val closeIntent = Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS)
+                sendBroadcast(closeIntent)
             }
         } catch (_: Exception) {}
     }
