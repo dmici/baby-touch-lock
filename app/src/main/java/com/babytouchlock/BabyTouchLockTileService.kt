@@ -58,10 +58,17 @@ class BabyTouchLockTileService : TileService() {
             // 1. Collapse Quick Settings drawer across all Android versions
             service.collapseSystemUI()
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S) {
-                try {
-                    @Suppress("DEPRECATION")
-                    sendBroadcast(Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS))
-                } catch (_: Exception) {}
+                // On Android <= 11 (including Samsung devices running One UI),
+                // ACTION_CLOSE_SYSTEM_DIALOGS is ignored or restricted, and
+                // GLOBAL_ACTION_DISMISS_NOTIFICATION_SHADE is not available.
+                // Using startActivityAndCollapse with a transparent trampoline activity
+                // is the standard, reliable mechanism to collapse the notification shade from a TileService.
+                val collapseIntent = Intent(this, CollapseShadeActivity::class.java).apply {
+                    flags = Intent.FLAG_ACTIVITY_NEW_TASK or
+                            Intent.FLAG_ACTIVITY_NO_ANIMATION or
+                            Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS
+                }
+                startActivityAndCollapseCompat(collapseIntent)
             }
 
             // 2. Engage screen lock after delay allowing system shade to finish collapsing

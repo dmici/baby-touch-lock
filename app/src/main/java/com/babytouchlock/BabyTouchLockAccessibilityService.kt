@@ -170,16 +170,28 @@ class BabyTouchLockAccessibilityService : AccessibilityService() {
 
     /**
      * Closes the notification shade / Quick Settings drawer across all Android versions.
-     * Uses Android 12+ (API 31+) Global Action, or ACTION_CLOSE_SYSTEM_DIALOGS broadcast on Android 11 and below.
+     * Uses Android 12+ (API 31+) Global Action, or StatusBarManager reflection / broadcast on Android 11 and below.
      */
     fun collapseSystemUI() {
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                 performGlobalAction(GLOBAL_ACTION_DISMISS_NOTIFICATION_SHADE)
             } else {
-                @Suppress("DEPRECATION")
-                val closeIntent = Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS)
-                sendBroadcast(closeIntent)
+                // 1. Try reflection on StatusBarManager.collapsePanels (supported on Android <= 11)
+                try {
+                    val statusBarManager = getSystemService("statusbar")
+                    val collapseMethod = Class.forName("android.app.StatusBarManager")
+                        .getMethod("collapsePanels")
+                    collapseMethod.isAccessible = true
+                    collapseMethod.invoke(statusBarManager)
+                } catch (_: Exception) {}
+
+                // 2. Broadcast fallback for legacy AOSP builds
+                try {
+                    @Suppress("DEPRECATION")
+                    val closeIntent = Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS)
+                    sendBroadcast(closeIntent)
+                } catch (_: Exception) {}
             }
         } catch (_: Exception) {}
     }
